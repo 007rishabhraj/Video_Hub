@@ -7,6 +7,7 @@ import  img2  from '../assests/2.jpg';
 import  img3  from '../assests/3.jpg';
 import  img4  from '../assests/4.jpg';
 import  img5  from '../assests/5.png';
+// import "./Home.css";
 const headingOptions = {
   pos: 'absolute',
   left: '50%',
@@ -20,7 +21,7 @@ const headingOptions = {
 const Home = () => {
   return (
     <Box>
-      <MyCarousel />
+      <MyCarousel className="carousel-style"></MyCarousel>
 
       <Container maxW={'container.xl'} minH={'100vh'} p="16">
         <Heading
@@ -77,27 +78,27 @@ const MyCarousel = () => (
     showThumbs={false}
     showArrows={false}
   >
-    <Box w="full" h={'100vh'}>
+    <Box w="full" h={['80vh', '100vh']}>
       <Image src={img1} h="full" w={'full'} objectFit={'cover'} />
       <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
         Watch The Future
       </Heading>
     </Box>
-    <Box w="full" h={'100vh'}>
+    <Box w="full" h={['80vh', '100vh']}>
       <Image src={img2} h="full" w={'full'} objectFit={'cover'} />
       <Heading bgColor={'whiteAlpha.900'} color={'black'} {...headingOptions}>
         Future is Gaming
       </Heading>
     </Box>
 
-    <Box w="full" h={'100vh'}>
+    <Box w="full" h={['80vh', '100vh']}>
       <Image src={img3} h="full" w={'full'} objectFit={'cover'} />
       <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
         Gaming on Console
       </Heading>
     </Box>
 
-    <Box w="full" h={'100vh'}>
+    <Box w="full" h={['80vh', '100vh']}>
       <Image src={img4} h="full" w={'full'} objectFit={'cover'} />
       <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
         Night life is cool
